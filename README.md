@@ -1,6 +1,6 @@
 # brokenOutMobile
 
-<img src="assets/mockup.png" />
+<img src="assets/threed_mockup.png" />
 
 # Broken Out
 > Aplicativo desenvolvido com React Native
@@ -9,8 +9,6 @@ O Broken Out é um app que visa facilitar o acesso a informações de jogos, sej
 
 Web: https://github.com/rafalmeida73/brokenOut
 Backend: https://github.com/rafalmeida73/brokenoutbackend
-
-<img src="assets/mockup.png" />
 
 ## Installation
 
