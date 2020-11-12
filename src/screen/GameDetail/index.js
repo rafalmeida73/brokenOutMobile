@@ -80,9 +80,13 @@ const GameDetail = (props) => {
           playstation,
           autor
         } = info.val();
+
         setAutor(autor);
+
         setAppId(steam);
+
         setTitle(nome);
+
         data.push({
           name: nome,
           img: imagem,
@@ -118,9 +122,13 @@ const GameDetail = (props) => {
         playstation,
         autor
       } = info.val();
+
       setAutor(autor);
+
       setAppId(steam);
+
       setTitle(nome);
+
       data.push({
         name: nome,
         img: imagem,
@@ -224,11 +232,7 @@ const GameDetail = (props) => {
 
             <View>
               <Text style={styles.textDelete}>
-                clicar em
-                 <Text style={styles.confirm}>
-                  confirmar
-                </Text>
-                jogo será deletado!
+                 Ao clicar em <Text style={styles.confirm}>confirmar</Text> o jogo será deletado!
               </Text>
             </View>
 
@@ -445,7 +449,10 @@ const GameDetail = (props) => {
                               </Modal>
                             </Portal>
 
-                            <Button style={styles.modal} icon="dots-horizontal" onPress={showModal}></Button>
+                            {c.autor === firebase.getCurrentUid() && (
+                              <Button style={styles.modal} icon="dots-horizontal" onPress={showModal}></Button>
+                            )}
+
                           </>
                         )}
 
